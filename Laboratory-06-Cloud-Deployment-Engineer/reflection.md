@@ -1,1 +1,11 @@
+# Mission 6: The Cloud Deployment Engineer — Reflection
 
+This laboratory activity helped me understand how Docker Compose makes cloud deployment easier and more organized. Instead of manually creating and configuring each container using separate commands, I learned that I can define the services in one `docker-compose.yml` file. By using `docker-compose up -d`, I can start multiple related containers with a single command. This saves time, reduces repetitive work, and makes the deployment process easier to repeat.
+
+I also learned that indentation is very important when writing YAML files. YAML uses spaces to organize its structure, so an incorrect indentation or the use of tabs may cause parsing errors. If the file is not formatted correctly, Docker Compose might not understand the configuration and the deployment may fail. Because of this, I realized that I need to be careful when writing and checking configuration files.
+
+Environment variables are also important because they provide configuration values to containers. In this activity, variables such as `MYSQL_PASSWORD`, `MYSQL_DATABASE`, and `MYSQL_USER` help Nextcloud connect to the MariaDB database. The `MYSQL_HOST=database` variable identifies the database service that the application needs to reach. However, I also learned that sensitive passwords should be handled securely in real-world deployments instead of being written directly in configuration files.
+
+Deploying Nextcloud and MariaDB made me realize how quickly a cloud-based application can be prepared using container technology. It was satisfying to see how different services work together to provide private cloud storage. I also understood that successful deployment requires checking container status, testing application access, and shutting down services properly.
+
+Since Mission 1, my understanding of Cloud Computing has improved. Before, I mainly understood it as accessing services and resources over the internet. Now, I have a better understanding of containers, service communication, configuration files, and Infrastructure as Code. This mission taught me that cloud engineers need both technical skills and careful documentation to build systems that are manageable, reliable, and easier to maintain.
